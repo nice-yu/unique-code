@@ -1,0 +1,35 @@
+{
+    "name": "nice-yu/unique-code",
+    "description": "Generate a unique invitation code within the current system",
+    "keywords": [
+        "invitation code",
+        "unique code"
+    ],
+    "homepage": "https://github.com/nice-yu/unique-code",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "nice-yu",
+            "email": "nice-yu@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4",
+        "phpunit/phpunit": "9.6"
+    },
+    "autoload": {
+        "files": [ "src/functions.php" ],
+        "psr-4": { "NiceYu\\UniqueCode\\": "./src/" }
+    },
+    "autoload-dev": {
+        "files": [ "src/functions.php" ],
+        "psr-4": {
+            "NiceYu\\Tests\\": "./tests/"
+        }
+    }
+}
